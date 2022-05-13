@@ -17,7 +17,8 @@ const Homepage: React.FC = () => {
             <Typography component={"p"} variant={"body1"} margin={1}>
                 There is a homepage that explains what the project does, what's interesting about
                 this project, and how to get involved in this project.
-                <br />
+            </Typography>
+            <Typography component={"p"} variant={"body1"} margin={1}>
                 You can apply for the corresponding subdomain by sending email to{" "}
                 <Link href={"mailto:admin@fuckur.mom"} underline={"hover"}>
                     {"admin@fuckur.mom"}
