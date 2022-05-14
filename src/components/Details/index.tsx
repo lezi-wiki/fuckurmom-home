@@ -1,20 +1,32 @@
 import React, { useEffect } from "react";
-import { Button, Paper, Typography } from "@mui/material";
-import { useHistory } from "react-router-dom";
+import {
+    Button,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogTitle,
+    Paper,
+    Typography,
+} from "@mui/material";
 import { useAppDispatch } from "../../redux/hooks";
 import { setTitle } from "../../redux/slices/view";
 
 const Details: React.FC = () => {
-    const history = useHistory();
     const dispatch = useAppDispatch();
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     useEffect(() => {
         dispatch(setTitle("Details"));
     });
-
-    const handleClickDetails = () => {
-        history.push("/datails");
-    };
 
     return (
         <Paper
@@ -85,9 +97,35 @@ const Details: React.FC = () => {
                     <li>Idiots' contact</li>
                 </ul>
             </Typography>
-            <Button size={"large"} onClick={handleClickDetails}>
+            <Button size={"large"} onClick={handleOpen}>
                 {"Go for apply"}
             </Button>
+            <Dialog
+                open={open}
+                sx={{
+                    "& .MuiPaper-root": {
+                        width: 380,
+                        maxWidth: "95vw",
+                    },
+                }}
+            >
+                <DialogTitle>Confirm</DialogTitle>
+                <DialogContent dividers>
+                    You will be navigated to the GitHub Issue page, be sure to state{" "}
+                    <code>[Apply]</code> at the beginning of the title of the Issue
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose}>Cancel</Button>
+                    <Button
+                        onClick={() => {
+                            window.open("https://github.com/fuckur-mom/home/issues/new");
+                            handleClose();
+                        }}
+                    >
+                        Go
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </Paper>
     );
 };
