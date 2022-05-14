@@ -30,7 +30,9 @@ const NavBar: React.FC = () => {
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const title = useAppSelector((state) => state.view.title);
+    const title = useAppSelector((state) =>
+        state.view.title !== null ? state.view.title : "Fuck Your Mom"
+    );
     const open = useAppSelector((state) => state.view.sidebarOpen);
 
     const handleOpen = () => {

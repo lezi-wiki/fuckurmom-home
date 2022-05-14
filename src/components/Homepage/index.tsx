@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Link, Paper, Typography } from "@mui/material";
+import { useHistory } from "react-router-dom";
+import { useAppDispatch } from "../../redux/hooks";
+import { setTitle } from "../../redux/slices/view";
 
 const Homepage: React.FC = () => {
+    const history = useHistory();
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(setTitle("Home"));
+    });
+
+    const handleClickDetails = () => {
+        history.push("/details");
+    };
+
     return (
         <Paper
             sx={{
@@ -33,7 +47,9 @@ const Homepage: React.FC = () => {
                 idiots to self-harm and commit suicide, thereby reducing the number of idiots in the
                 world.
             </Typography>
-            <Button size={"large"}>{"Go for details"}</Button>
+            <Button size={"large"} onClick={handleClickDetails}>
+                {"Go for details"}
+            </Button>
         </Paper>
     );
 };

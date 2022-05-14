@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface ViewUpdateState {
-    title: string;
+    title: string | null;
     sidebarOpen: boolean;
 }
 
 const initState: ViewUpdateState = {
-    title: "Fuck Your Mom",
+    title: null,
     sidebarOpen: false,
 };
 

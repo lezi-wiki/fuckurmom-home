@@ -1,30 +1,39 @@
 import React from "react";
 import { Box, Container, CssBaseline } from "@mui/material";
-import Background from "./components/Background";
+import { useAppSelector } from "./redux/hooks";
+import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { Route, Switch, useRouteMatch } from "react-router-dom";
-import Homepage from "./components/Homepage";
+import Background from "./components/Background";
+
+const Homepage = React.lazy(() => import("./components/Homepage"));
+const Details = React.lazy(() => import("./components/Details"));
 
 const App: React.FC = () => {
-    const path = useRouteMatch().path;
+    window.document.title = useAppSelector((state) =>
+        state.view.title !== null ? state.view.title + " - Fuck Your Mom" : "Fuck Your Mom"
+    );
 
     return (
         <React.Fragment>
             <Navbar />
             <CssBaseline />
-            <Container maxWidth={"md"} sx={{ height: "100vh" }}>
+            <Container maxWidth={"md"} sx={{ minHeight: "100vh" }}>
                 <Box
                     component={"main"}
                     display={"flex"}
                     flexDirection={"column"}
                     justifyContent={"center"}
-                    height={"100%"}
+                    minHeight={"100%"}
                     paddingTop={12}
+                    paddingBottom={6}
                 >
                     <React.Suspense>
                         <Switch>
-                            <Route path={path + "/"} exact>
-                                <Homepage />
+                            <Route path={"/"} exact>
+                                <Homepage key={"homepage"} />
+                            </Route>
+                            <Route path={"/details"}>
+                                <Details key={"details"} />
                             </Route>
                         </Switch>
                     </React.Suspense>

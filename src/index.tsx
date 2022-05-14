@@ -13,17 +13,15 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 const theme = createTheme();
 
 root.render(
-    <React.StrictMode>
-        <React.Suspense fallback={"Loading..."}>
+    <React.Suspense fallback={"Loading..."}>
+        <BrowserRouter>
             <Provider store={store}>
                 <ThemeProvider theme={theme}>
-                    <BrowserRouter>
-                        <App />
-                    </BrowserRouter>
+                    <App />
                 </ThemeProvider>
             </Provider>
-        </React.Suspense>
-    </React.StrictMode>
+        </BrowserRouter>
+    </React.Suspense>
 );
 
 // If you want to start measuring performance in your app, pass a function
