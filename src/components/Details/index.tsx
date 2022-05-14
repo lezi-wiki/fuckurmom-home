@@ -93,6 +93,7 @@ const Details: React.FC = () => {
                 <ul>
                     <li>Your name</li>
                     <li>Your contact</li>
+                    <li>Your project name</li>
                     <li>What idiots do (detailed description)</li>
                     <li>Idiots' contact</li>
                 </ul>
@@ -115,14 +116,14 @@ const Details: React.FC = () => {
                     <code>[Apply]</code> at the beginning of the title of the Issue
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose}>Cancel</Button>
+                    <Button onClick={handleClose}>{"Cancel"}</Button>
                     <Button
                         onClick={() => {
                             window.open("https://github.com/fuckur-mom/home/issues/new");
                             handleClose();
                         }}
                     >
-                        Go
+                        {"Go"}
                     </Button>
                 </DialogActions>
             </Dialog>
