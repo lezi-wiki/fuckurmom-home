@@ -21,7 +21,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const ColorModeSwitcher = React.lazy(() => import("./colorModeSwitcher"));
 const SidebarItem = React.lazy(() => import("./sidebarItem"));
 
 const NavBar: React.FC = () => {
@@ -41,8 +40,8 @@ const NavBar: React.FC = () => {
     const drawerWidth = 240;
 
     return (
-        <Box flexGrow={1}>
-            <AppBar position={"fixed"}>
+        <React.Fragment>
+            <AppBar position={"fixed"} color={"primary"} enableColorOnDark>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -66,7 +65,6 @@ const NavBar: React.FC = () => {
                     </Typography>
                     <Box>
                         <React.Suspense>
-                            <ColorModeSwitcher />
                             <Link
                                 href={"https://github.com/fuckur-mom"}
                                 target={"_blank"}
@@ -111,7 +109,7 @@ const NavBar: React.FC = () => {
                     </List>
                 </Box>
             </Drawer>
-        </Box>
+        </React.Fragment>
     );
 };
 

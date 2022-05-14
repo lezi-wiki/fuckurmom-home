@@ -1,15 +1,16 @@
 import React from "react";
-import { Card, Link, Typography } from "@mui/material";
+import { Button, Link, Paper, Typography } from "@mui/material";
 
 const Homepage: React.FC = () => {
     return (
-        <Card
+        <Paper
             sx={{
                 padding: 2,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
             }}
+            elevation={2}
         >
             <Typography component={"h1"} variant={"h4"} mb={1}>
                 {"Fuck Your Mom"}
@@ -32,7 +33,8 @@ const Homepage: React.FC = () => {
                 idiots to self-harm and commit suicide, thereby reducing the number of idiots in the
                 world.
             </Typography>
-        </Card>
+            <Button size={"large"}>{"Go for details"}</Button>
+        </Paper>
     );
 };
 
