@@ -3,8 +3,10 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import LocalStorageBackend from "i18next-localstorage-backend";
 import { initReactI18next } from "react-i18next";
 import resources from "./translation";
+import PanguMiddleware from "./panguMiddleware";
 
 i18n.use(LanguageDetector)
+    .use(PanguMiddleware)
     .use(initReactI18next)
     .init({
         backend: {
@@ -20,6 +22,7 @@ i18n.use(LanguageDetector)
         ns: ["siteCard", "pageName", "HomeContext", "DetailContext"],
         defaultNS: "translation",
         resources: resources,
+        postProcess: "pangu",
     });
 
 export const languages = {
