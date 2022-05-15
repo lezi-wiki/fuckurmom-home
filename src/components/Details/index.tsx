@@ -94,6 +94,7 @@ const Details: React.FC = () => {
                     <li>Your name</li>
                     <li>Your contact</li>
                     <li>Your project name</li>
+                    <li>The type of subdomain you are applying for</li>
                     <li>What idiots do (detailed description)</li>
                     <li>Idiots' contact</li>
                 </ul>

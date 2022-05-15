@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Button, Link, Paper, Typography } from "@mui/material";
+import { Button, Paper, Typography } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import { useAppDispatch } from "../../redux/hooks";
 import { setTitle } from "../../redux/slices/view";
@@ -34,11 +34,8 @@ const Homepage: React.FC = () => {
                 this project, and how to get involved in this project.
             </Typography>
             <Typography component={"p"} variant={"body1"} margin={1}>
-                You can apply for the corresponding subdomain by sending email to{" "}
-                <Link href={"mailto:admin@fuckur.mom"} underline={"hover"}>
-                    {"admin@fuckur.mom"}
-                </Link>{" "}
-                , but you need to clarify your identity and the reason for the application.
+                You can apply for the corresponding subdomain by submit an Issue, but you need to
+                clarify your identity and the reason for the application.
             </Typography>
             <Typography component={"p"} variant={"body1"} margin={1}>
                 Don't get me wrong, we have all the respect for your mother. This project gives you
