@@ -7601,7 +7601,7 @@ react-refresh@^0.11.0:
   resolved "https://registry.npmmirror.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-router-dom@^5:
+react-router-dom@5:
   version "5.3.1"
   resolved "https://registry.npmmirror.com/react-router-dom/-/react-router-dom-5.3.1.tgz#0151baf2365c5fcd8493f6ec9b9b31f34d0f8ae1"
   integrity sha512-f0pj/gMAbv9e8gahTmCEY20oFhxhrmHwYeIwH5EO5xu0qme+wXtsdB8YfUOAZzUz4VaXmb58m3ceiLtjMhqYmQ==

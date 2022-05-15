@@ -2,5 +2,8 @@ export default interface SubDomainInfo {
     domain: string;
     title: string;
     owner: string;
-    sourceCode?: string;
+    ownerContact: string;
+    sourceCode: string;
+    idiot: string;
+    idiotContact: string;
 }
