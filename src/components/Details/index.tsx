@@ -120,7 +120,9 @@ const Details: React.FC = () => {
                     <Button onClick={handleClose}>{"Cancel"}</Button>
                     <Button
                         onClick={() => {
-                            window.open("https://github.com/fuckur-mom/home/issues/new");
+                            window.open(
+                                "https://github.com/fuckur-mom/home/issues/new?assignees=AH-dark&labels=apply&template=apply-for-subdomain.md&title=%5BApply%5D+Apply+for+subdomain"
+                            );
                             handleClose();
                         }}
                     >
