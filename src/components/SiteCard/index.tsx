@@ -52,7 +52,7 @@ const SiteCard: React.FC<{ domain: string }> = (props) => {
                             {t("Owner")} <i>{data.owner}</i>
                         </Typography>
                         <Typography variant={"body1"} noWrap>
-                            {t("Idiot")}" <i>{data.idiot}</i>
+                            {t("Idiot")} <i>{data.idiot}</i>
                         </Typography>
                     </CardContent>
                     <CardActions
