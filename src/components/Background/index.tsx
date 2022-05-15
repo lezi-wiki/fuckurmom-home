@@ -7,7 +7,7 @@ const Background: React.FC = () => {
             id={"background"}
             sx={{
                 opacity: 1,
-                backgroundImage: "url(https://bing.ahdark.com/api/new)",
+                backgroundImage: "url(https://api.fuckur.mom/backgroundImage)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 top: 0,
