@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Box, Container, CssBaseline } from "@mui/material";
 import { useAppSelector } from "./redux/hooks";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import NoMatch from "./components/NoMatch";
+import { useTranslation } from "react-i18next";
 
 const Homepage = React.lazy(() => import("./components/Homepage"));
 const Details = React.lazy(() => import("./components/Details"));
@@ -13,6 +14,8 @@ const App: React.FC = () => {
     window.document.title = useAppSelector((state) =>
         state.view.title !== null ? state.view.title + " - Fuck Your Mom" : "Fuck Your Mom"
     );
+
+    window.document.documentElement.lang = useTranslation().i18n.language.toLowerCase();
 
     return (
         <React.Fragment>

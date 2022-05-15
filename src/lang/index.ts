@@ -22,10 +22,6 @@ i18n.use(LanguageDetector)
         resources: resources,
     });
 
-i18n.on("languageChanged", (lng) => {
-    window.document.documentElement.setAttribute("lang", lng);
-});
-
 export const languages = {
     "en-US": "English (US)",
     "zh-CN": "简体中文",
