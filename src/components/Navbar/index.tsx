@@ -17,9 +17,10 @@ import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setSidebarOpen } from "../../redux/slices/view";
 
-import HomeIcon from "@mui/icons-material/Home";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import HomeIcon from "@mui/icons-material/Home";
+import DetailsIcon from "@mui/icons-material/Details";
 
 const SidebarItem = React.lazy(() => import("./sidebarItem"));
 
@@ -107,6 +108,7 @@ const NavBar: React.FC = () => {
                     <List>
                         <React.Suspense>
                             <SidebarItem icon={HomeIcon} name={"Home"} url={"/"} />
+                            <SidebarItem icon={DetailsIcon} name={"Details"} url={"/details"} />
                         </React.Suspense>
                     </List>
                 </Box>
