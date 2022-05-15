@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { useAppDispatch } from "../../redux/hooks";
 import { setTitle } from "../../redux/slices/view";
+import { useTranslation } from "react-i18next";
 
 const Details: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -29,6 +30,8 @@ const Details: React.FC = () => {
         dispatch(setTitle("Details"));
     });
 
+    const { t } = useTranslation("DetailContext");
+
     return (
         <Paper
             sx={{
@@ -44,11 +47,12 @@ const Details: React.FC = () => {
             elevation={2}
         >
             <Typography component={"h1"} variant={"h4"} mb={1}>
-                {"Details"}
+                {t("Details")}
             </Typography>
             <Typography component={"p"} variant={"body1"} margin={1}>
-                Before you submit, you need to make sure your situation meets our requirements. We
-                have the following requirements for submitted applications:
+                {t(
+                    "Before you submit, you need to make sure your situation meets our requirements. We have the following requirements for submitted applications:"
+                )}
             </Typography>
             <Box component={"ul"} margin={0}>
                 {[
@@ -60,12 +64,12 @@ const Details: React.FC = () => {
                     "You must deploy your applications legally, not from your home PC.",
                 ].map((text, index) => (
                     <Box component={"li"} key={index}>
-                        {text}
+                        {t(text)}
                     </Box>
                 ))}
             </Box>
             <Typography component={"p"} variant={"body1"} margin={1}>
-                There are strict formatting requirements to follow for your application:
+                {t("There are strict formatting requirements to follow for your application:")}
             </Typography>
             <Box component={"ul"} margin={0}>
                 {[
@@ -74,12 +78,12 @@ const Details: React.FC = () => {
                     "If authenticated, you have unlimited access to subdomains which begin with your name, which is discouraged but considered cool.",
                 ].map((text, index) => (
                     <Box component={"li"} key={index}>
-                        {text}
+                        {t(text)}
                     </Box>
                 ))}
             </Box>
             <Typography component={"p"} variant={"body1"} margin={1}>
-                The application format is as follows:
+                {t("The application format is as follows:")}
             </Typography>
             <Box component={"ul"} margin={0}>
                 {[
@@ -91,12 +95,12 @@ const Details: React.FC = () => {
                     "Idiots' contact",
                 ].map((text, index) => (
                     <Box component={"li"} key={index}>
-                        {text}
+                        {t(text)}
                     </Box>
                 ))}
             </Box>
             <Button size={"large"} onClick={handleOpen}>
-                {"Go for apply"}
+                {t("Go for apply")}
             </Button>
             <Dialog
                 open={open}
@@ -107,13 +111,14 @@ const Details: React.FC = () => {
                     },
                 }}
             >
-                <DialogTitle>Confirm</DialogTitle>
+                <DialogTitle>{t("Confirm")}</DialogTitle>
                 <DialogContent dividers>
-                    You will be navigated to the GitHub Issue page, be sure to state{" "}
-                    <code>[Apply]</code> at the beginning of the title of the Issue
+                    {t(
+                        "You will be navigated to the GitHub Issue page, be sure to state [Apply] at the beginning of the title of the Issue"
+                    )}
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose}>{"Cancel"}</Button>
+                    <Button onClick={handleClose}>{t("Cancel")}</Button>
                     <Button
                         onClick={() => {
                             window.open(
@@ -122,7 +127,7 @@ const Details: React.FC = () => {
                             handleClose();
                         }}
                     >
-                        {"Go"}
+                        {t("Go")}
                     </Button>
                 </DialogActions>
             </Dialog>

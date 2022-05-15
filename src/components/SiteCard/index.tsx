@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { useGetAllInfoQuery } from "../../service/localDataApi";
 import SubDomainInfo from "../../model/subDomainInfo";
+import { useTranslation } from "react-i18next";
 
 const SiteCard: React.FC<{ domain: string }> = (props) => {
     const { data: dataList, isLoading } = useGetAllInfoQuery(null);
@@ -26,6 +27,8 @@ const SiteCard: React.FC<{ domain: string }> = (props) => {
         }
     }, [dataList]);
 
+    const { t } = useTranslation("siteCard");
+
     return (
         <Card>
             {isLoading ? (
@@ -40,16 +43,16 @@ const SiteCard: React.FC<{ domain: string }> = (props) => {
                             gutterBottom
                             noWrap
                         >
-                            Site: {data.title}
+                            {t("Site")} {data.title}
                         </Typography>
                         <Typography variant={"body1"} noWrap>
-                            Domain: <i>{data.domain}</i>
+                            {t("Domain")} <i>{data.domain}</i>
                         </Typography>
                         <Typography variant={"body1"} noWrap>
-                            Owner: <i>{data.owner}</i>
+                            {t("Owner")} <i>{data.owner}</i>
                         </Typography>
                         <Typography variant={"body1"} noWrap>
-                            Idiot: <i>{data.idiot}</i>
+                            {t("Idiot")}" <i>{data.idiot}</i>
                         </Typography>
                     </CardContent>
                     <CardActions
@@ -63,7 +66,7 @@ const SiteCard: React.FC<{ domain: string }> = (props) => {
                             href={"https://" + data.domain}
                             target={"_blank"}
                         >
-                            Go
+                            {t("Go")}
                         </Button>
                     </CardActions>
                 </>

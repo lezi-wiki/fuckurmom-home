@@ -7,6 +7,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@mui/styles";
+import { I18nextProvider } from "react-i18next";
+import Lang from "./lang";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -17,7 +19,9 @@ root.render(
         <BrowserRouter>
             <Provider store={store}>
                 <ThemeProvider theme={theme}>
-                    <App />
+                    <I18nextProvider i18n={Lang}>
+                        <App />
+                    </I18nextProvider>
                 </ThemeProvider>
             </Provider>
         </BrowserRouter>

@@ -16,6 +16,7 @@ import { useAppSelector } from "../../redux/hooks";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setSidebarOpen } from "../../redux/slices/view";
+import { useTranslation } from "react-i18next";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -42,6 +43,8 @@ const NavBar: React.FC = () => {
 
     const drawerWidth = 240;
 
+    const { t } = useTranslation("pageName");
+
     return (
         <React.Fragment>
             <AppBar position={"fixed"} color={"primary"} enableColorOnDark>
@@ -64,7 +67,7 @@ const NavBar: React.FC = () => {
                             history.push("/");
                         }}
                     >
-                        {title}
+                        {t(title)}
                     </Typography>
                     <Box>
                         <React.Suspense>
@@ -107,8 +110,8 @@ const NavBar: React.FC = () => {
                 <Box overflow={"auto"}>
                     <List>
                         <React.Suspense>
-                            <SidebarItem icon={HomeIcon} name={"Home"} url={"/"} />
-                            <SidebarItem icon={DetailsIcon} name={"Details"} url={"/details"} />
+                            <SidebarItem icon={HomeIcon} name={t("Home")} url={"/"} />
+                            <SidebarItem icon={DetailsIcon} name={t("Details")} url={"/details"} />
                         </React.Suspense>
                     </List>
                 </Box>
