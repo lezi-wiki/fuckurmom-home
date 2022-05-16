@@ -1,6 +1,6 @@
 import TranslationModel from "./model";
 
-const zhCN: TranslationModel = {
+const zhHK: TranslationModel = {
     HomeContext: {
         "Fuck Your Mom": "Fuck Your Mom",
         "There is a homepage that explains what the project does, what's interesting about this project, and how to get involved in this project.":
