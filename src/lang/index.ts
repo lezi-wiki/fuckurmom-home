@@ -19,7 +19,7 @@ i18n.use(LanguageDetector)
         },
         fallbackLng: "en-US",
         debug: process.env.NODE_ENV === "development",
-        ns: ["siteCard", "pageName", "HomeContext", "DetailContext"],
+        ns: ["siteCard", "pageName", "HomeContext", "DetailContext", "languageSwitcher"],
         defaultNS: "translation",
         resources: resources,
         postProcess: "pangu",
@@ -27,7 +27,8 @@ i18n.use(LanguageDetector)
 
 export const languages: Record<keyof typeof resources, string> = {
     "en-US": "English (US)",
-    "zh-CN": "简体中文",
+    "zh-CN": "简体中文（中国大陆）",
+    "zh-HK": "繁體中文（香港）",
 };
 
 export default i18n;

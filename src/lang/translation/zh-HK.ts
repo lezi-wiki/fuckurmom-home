@@ -61,6 +61,9 @@ const zhHK: TranslationModel = {
         Idiot: "傻逼：",
         Go: "前去",
     },
+    languageSwitcher: {
+        "System language switched to {{name}}": "系統語言已經轉換至 {{name}}",
+    },
 };
 
 export default zhHK;
