@@ -1261,6 +1261,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/noto-sans-hk@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.npmmirror.com/@fontsource/noto-sans-hk/-/noto-sans-hk-4.5.10.tgz#6126e06f2417247cef7f47e734768669ea3e071a"
+  integrity sha512-4cdrB2Juxqw7gVWwn8ekyCeHqjxBUe9aIfyc7RbUquai1N8n6TRm/qUo0Kx0gLVBW5/X7ri64+2GxrMRyL4YlQ==
+
 "@fontsource/noto-sans-sc@^4.5.10":
   version "4.5.10"
   resolved "https://registry.npmmirror.com/@fontsource/noto-sans-sc/-/noto-sans-sc-4.5.10.tgz#526d10dbfe98f981024a5f2500941f817ee92a93"

@@ -6,13 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import { SnackbarProvider } from "notistack";
 import { createTheme, GlobalStyles } from "@mui/material";
 import { ThemeProvider } from "@mui/styles";
 import { I18nextProvider } from "react-i18next";
 import Lang from "./lang";
+
 import "@fontsource/roboto";
 import "@fontsource/noto-sans-sc";
-import { SnackbarProvider } from "notistack";
+import "@fontsource/noto-sans-hk";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -33,6 +35,7 @@ root.render(
                                         '"Segoe UI"',
                                         '"Roboto"',
                                         '"Noto Sans SC"',
+                                        '"Noto Sans HK"',
                                         '"Helvetica Neue"',
                                         "Arial",
                                         "sans-serif",
@@ -44,7 +47,12 @@ root.render(
                         }}
                     />
                     <I18nextProvider i18n={Lang}>
-                        <SnackbarProvider>
+                        <SnackbarProvider
+                            anchorOrigin={{
+                                vertical: "top",
+                                horizontal: "right",
+                            }}
+                        >
                             <App />
                         </SnackbarProvider>
                     </I18nextProvider>
