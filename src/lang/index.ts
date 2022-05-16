@@ -29,6 +29,7 @@ export const languages: Record<keyof typeof resources, string> = {
     "en-US": "English (US)",
     "zh-CN": "简体中文（中国大陆）",
     "zh-HK": "繁體中文（香港）",
+    "zh-TW": "台灣正體（台湾）",
 };
 
 export default i18n;
