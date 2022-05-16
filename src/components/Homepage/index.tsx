@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useAppDispatch } from "../../redux/hooks";
 import { setTitle } from "../../redux/slices/view";
 import { useTheme } from "@mui/styles";
-import { useGetAllInfoQuery } from "../../service/localDataApi";
+import { useGetAllInfoQuery, useLazyGetAllInfoQuery } from "../../service/dataApi";
 import SubDomainInfo from "../../model/subDomainInfo";
 import { useTranslation } from "react-i18next";
 

@@ -7,7 +7,7 @@ import {
     CircularProgress,
     Typography,
 } from "@mui/material";
-import { useGetAllInfoQuery } from "../../service/localDataApi";
+import { useGetAllInfoQuery } from "../../service/dataApi";
 import SubDomainInfo from "../../model/subDomainInfo";
 import { useTranslation } from "react-i18next";
 

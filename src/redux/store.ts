@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import view from "./slices/view";
 import data from "./slices/data";
-import localDataApi from "../service/localDataApi";
+import localDataApi from "../service/dataApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import thunk from "redux-thunk";
 
