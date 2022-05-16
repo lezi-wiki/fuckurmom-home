@@ -44,6 +44,10 @@ root.render(
                                         '"Segoe UI Symbol"',
                                     ].join(",") + "!important",
                             },
+                            ":root": {
+                                "--fullHeight": window.innerHeight + "px",
+                                "--fullWidth": window.innerWidth + "px",
+                            },
                         }}
                     />
                     <I18nextProvider i18n={Lang}>
@@ -52,6 +56,7 @@ root.render(
                                 vertical: "top",
                                 horizontal: "right",
                             }}
+                            autoHideDuration={2000}
                         >
                             <App />
                         </SnackbarProvider>
