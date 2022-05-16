@@ -30,7 +30,7 @@ const zhCN: TranslationModel = {
         "There are strict formatting requirements to follow for your application:":
             "您的应用程序需要遵循严格的格式要求：",
         "You need to point out what the idiot did, write it as best you can!":
-            "您需要指出白痴做了什么，尽你所能地写吧！",
+            "您需要指出傻逼做了什么，尽你所能地写吧！",
         "You need to identify yourself and leave your contact details so we can better communicate with you.":
             "您需要表明自己的身份并留下您的联系方式，以便我们更好地与您沟通。",
         "If authenticated, you have unlimited access to subdomains which begin with your name, which is discouraged but considered cool.":
