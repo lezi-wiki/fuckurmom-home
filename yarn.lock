@@ -4602,6 +4602,11 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
+flag-icons@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.npmmirror.com/flag-icons/-/flag-icons-6.3.0.tgz#f5831c5a1b83f67f9952342b033792c09aea223a"
+  integrity sha512-/LrS5M4iJO2aCpZxwXfoxiOCvknN/k3c07v1r0wLTJY4B4oft8UijYr24ZAPEcaqbw/g4UiZjIgstMDatJ5VVg==
+
 flat-cache@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmmirror.com/flat-cache/-/flat-cache-3.0.4.tgz#61b0338302b2fe9f957dcc32fc2a87f1c3048b11"
@@ -7566,6 +7571,11 @@ react-app-polyfill@^3.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
+
+react-country-flag@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/react-country-flag/-/react-country-flag-3.0.2.tgz#54c37abe2c87251e95b0f40bb4c09b000f4669e7"
+  integrity sha512-JPaz+q3QD0/nZtHBKj5x3O7r/SgSG9kxbymdaIU0RqlDAcorJIe4KV0DFhWIdKh69q5cPVkIVERcMYGZdvXgAA==
 
 react-dev-utils@^12.0.1:
   version "12.0.1"

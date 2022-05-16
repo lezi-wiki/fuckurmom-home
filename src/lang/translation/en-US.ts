@@ -61,6 +61,9 @@ const enUS: TranslationModel = {
         Idiot: "Idiot",
         Go: "Go",
     },
+    languageSwitcher: {
+        "System language switched to {{name}}": "System language switched to {{name}}",
+    },
 };
 
 export default enUS;

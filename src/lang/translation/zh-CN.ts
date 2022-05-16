@@ -61,6 +61,9 @@ const zhCN: TranslationModel = {
         Idiot: "傻逼：",
         Go: "前往",
     },
+    languageSwitcher: {
+        "System language switched to {{name}}": "系统语言已切换到 {{name}}",
+    },
 };
 
 export default zhCN;

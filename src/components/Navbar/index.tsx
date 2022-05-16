@@ -6,6 +6,7 @@ import {
     IconButton,
     Link,
     List,
+    Stack,
     Theme,
     Toolbar,
     Typography,
@@ -24,6 +25,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import DetailsIcon from "@mui/icons-material/Details";
 
 const SidebarItem = React.lazy(() => import("./sidebarItem"));
+const LanguageSwitcher = React.lazy(() => import("./languageSwitcher"));
 
 const NavBar: React.FC = () => {
     const theme = useTheme<Theme>();
@@ -69,8 +71,9 @@ const NavBar: React.FC = () => {
                     >
                         {t(title)}
                     </Typography>
-                    <Box>
+                    <Stack direction={"row"} spacing={2}>
                         <React.Suspense>
+                            <LanguageSwitcher />
                             <Link
                                 href={"https://github.com/fuckur-mom"}
                                 target={"_blank"}
@@ -88,7 +91,7 @@ const NavBar: React.FC = () => {
                                 </IconButton>
                             </Link>
                         </React.Suspense>
-                    </Box>
+                    </Stack>
                 </Toolbar>
             </AppBar>
             <Drawer

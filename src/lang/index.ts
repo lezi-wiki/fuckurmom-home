@@ -25,7 +25,7 @@ i18n.use(LanguageDetector)
         postProcess: "pangu",
     });
 
-export const languages = {
+export const languages: Record<keyof typeof resources, string> = {
     "en-US": "English (US)",
     "zh-CN": "简体中文",
 };

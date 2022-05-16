@@ -3,6 +3,9 @@ import { ResourceLanguage } from "i18next";
 export default interface TranslationModel extends ResourceLanguage, ContextTranslation {
     siteCard: SiteCardTranslation;
     pageName: PageNameTranslation;
+    languageSwitcher: {
+        "System language switched to {{name}}": string;
+    };
 }
 
 export interface PageNameTranslation {

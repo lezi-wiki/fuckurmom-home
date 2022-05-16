@@ -12,6 +12,7 @@ import { I18nextProvider } from "react-i18next";
 import Lang from "./lang";
 import "@fontsource/roboto";
 import "@fontsource/noto-sans-sc";
+import { SnackbarProvider } from "notistack";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -43,7 +44,9 @@ root.render(
                         }}
                     />
                     <I18nextProvider i18n={Lang}>
-                        <App />
+                        <SnackbarProvider>
+                            <App />
+                        </SnackbarProvider>
                     </I18nextProvider>
                 </ThemeProvider>
             </Provider>
