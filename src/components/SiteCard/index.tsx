@@ -25,7 +25,7 @@ const SiteCard: React.FC<{ domain: string }> = (props) => {
         } else {
             return {} as SubDomainInfo;
         }
-    }, [dataList]);
+    }, [dataList, props.domain]);
 
     const { t } = useTranslation("siteCard");
 
