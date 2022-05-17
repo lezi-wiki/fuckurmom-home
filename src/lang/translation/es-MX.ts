@@ -2,7 +2,7 @@ import TranslationModel from "./model";
 
 const esMX: TranslationModel = {
     HomeContext: {
-        "Fuck Your Mom": "Fuck Your Mom",
+        "Fuck Your Mom": "Cabrón la Madre",
         "There is a homepage that explains what the project does, what's interesting about this project, and how to get involved in this project.":
             "Aquí hay inicio página que explica lo que hace el proyecto,interesante información del proyecto y como unirse el proyecto",
         "You can apply for the corresponding subdomain by submit an Issue, but you need to clarify your identity and the reason for the application.":
@@ -12,7 +12,7 @@ const esMX: TranslationModel = {
         "Go for details": "Más información",
     },
     DetailContext: {
-        Details: "详细信息",
+        Details: "Detalles",
         "Before you submit, you need to make sure your situation meets our requirements. We have the following requirements for submitted applications:":
             "Para las solicitudes presentadas, tenemos los siguientes requisitos:",
         "You must open source the code of the applications you deploy using the subdomain under any license.":
@@ -50,9 +50,9 @@ const esMX: TranslationModel = {
         Go: "Go",
     },
     pageName: {
-        Home: "主页",
-        Details: "详细信息",
-        "Fuck Your Mom": "Fuck Your Mom",
+        Home: "Página de inicio",
+        Details: "Detalles",
+        "Fuck Your Mom": "Cabrón la Madre",
     },
     siteCard: {
         Site: "Site: ",
