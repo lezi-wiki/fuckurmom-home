@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Box, Fab } from "@mui/material";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import { useSnackbar } from "notistack";
@@ -6,9 +6,15 @@ import { useSnackbar } from "notistack";
 const Footer: React.FC = () => {
     const { enqueueSnackbar } = useSnackbar();
 
-    const isServiceWorkerRegistered =
-        navigator.serviceWorker.controller !== null &&
-        navigator.serviceWorker.controller.state === "installed";
+    const isServiceWorkerRegistered = useMemo(() => {
+        if (!("serviceWorker" in navigator)) {
+            return false;
+        }
+        return (
+            navigator.serviceWorker.controller !== null &&
+            navigator.serviceWorker.controller.state === "activated"
+        );
+    }, [navigator.serviceWorker]);
 
     const handleRefresh = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
