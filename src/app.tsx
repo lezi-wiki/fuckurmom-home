@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import NoMatch from "./components/NoMatch";
+import Footer from "./components/Footer";
 
 const Homepage = React.lazy(() => import("./components/Homepage"));
 const Details = React.lazy(() => import("./components/Details"));
@@ -61,6 +62,7 @@ const App: React.FC = () => {
                     </React.Suspense>
                 </Box>
             </Container>
+            <Footer />
             <Background />
         </React.Fragment>
     );
