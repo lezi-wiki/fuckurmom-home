@@ -1,11 +1,12 @@
-import React, { useMemo } from "react";
+import React, { useState } from "react";
 import { Box, Container, CssBaseline } from "@mui/material";
 import { useAppSelector } from "./redux/hooks";
 import { Route, Switch } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import NoMatch from "./components/NoMatch";
-import { useTranslation } from "react-i18next";
+import Footer from "./components/Footer";
 
 const Homepage = React.lazy(() => import("./components/Homepage"));
 const Details = React.lazy(() => import("./components/Details"));
@@ -17,6 +18,11 @@ const App: React.FC = () => {
 
     window.document.documentElement.lang = useTranslation().i18n.language.toLowerCase();
 
+    const [height, setHeight] = useState(window.innerHeight);
+    window.addEventListener("resize", () => {
+        setHeight(window.innerHeight);
+    });
+
     return (
         <React.Fragment>
             <Navbar />
@@ -24,10 +30,12 @@ const App: React.FC = () => {
             <Container
                 maxWidth={"md"}
                 sx={{
-                    minHeight: "100vh",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
+                }}
+                style={{
+                    minHeight: height,
                 }}
             >
                 <Box
@@ -54,6 +62,7 @@ const App: React.FC = () => {
                     </React.Suspense>
                 </Box>
             </Container>
+            <Footer />
             <Background />
         </React.Fragment>
     );
