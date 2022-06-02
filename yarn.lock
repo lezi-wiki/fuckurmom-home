@@ -1591,20 +1591,6 @@
     react-is "^17.0.2"
     react-transition-group "^4.4.2"
 
-"@mui/private-classnames@^5.7.0":
-  version "5.7.0"
-  resolved "https://registry.npmmirror.com/@mui/private-classnames/-/private-classnames-5.7.0.tgz#7ec4c4632b58eb89bfecf67f2bf2a29a54022f6e"
-  integrity sha512-OSB4ybzpYiS11rQ3VtbcJz/CS19lC0r0Hk14iRZwPtVgapnL1hKsGtmgRviZLxpLk/cZUKaxaJDuuzI/extCoA==
-
-"@mui/private-theming@^5.7.0", "@mui/private-theming@^5.8.0":
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.0.tgz#7d927e7e12616dc10b0dcbe665df2c00ed859796"
-  integrity sha512-MjRAneTmCKLR9u2S4jtjLUe6gpHxlbb4g2bqpDJ2PdwlvwsWIUzbc/gVB4dvccljXeWxr5G2M/Co2blXisvFIw==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@mui/utils" "^5.8.0"
-    prop-types "^15.8.1"
-
 "@mui/private-theming@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.0.tgz#7d927e7e12616dc10b0dcbe665df2c00ed859796"
@@ -1665,7 +1651,7 @@
   resolved "https://registry.npmmirror.com/@mui/types/-/types-7.1.3.tgz#d7636f3046110bcccc63e6acfd100e2ad9ca712a"
   integrity sha512-DDF0UhMBo4Uezlk+6QxrlDbchF79XG6Zs0zIewlR4c0Dt6GKVFfUtzPtHCH1tTbcSlq/L2bGEdiaoHBJ9Y1gSA==
 
-"@mui/utils@^5.7.0", "@mui/utils@^5.8.0":
+"@mui/utils@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.8.0.tgz#4b1d19cbcf70773283375e763b7b3552b84cb58f"
   integrity sha512-7LgUtCvz78676iC0wpTH7HizMdCrTphhBmRWimIMFrp5Ph6JbDFVuKS1CwYnWWxRyYKL0QzXrDL0lptAU90EXg==
@@ -2227,10 +2213,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.0":
-  version "18.0.9"
-  resolved "https://registry.npmmirror.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
-  integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
+"@types/react@*", "@types/react@^18.0.10":
+  version "18.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.10.tgz#5692944d4a45e204fb7a981eb1388afe919cf4d0"
+  integrity sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
