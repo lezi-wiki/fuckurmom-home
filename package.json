@@ -9,7 +9,7 @@
     "@fontsource/noto-sans-sc": "^4.5.10",
     "@fontsource/roboto": "^4.5.7",
     "@mui/styles": "^5.8.0",
-    "@mui/icons-material": "^5.8.2",
+    "@mui/icons-material": "^5.8.3",
     "@mui/material": "^5.8.2",
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.14.1",
