@@ -1590,15 +1590,6 @@
     react-is "^17.0.2"
     react-transition-group "^4.4.2"
 
-"@mui/private-theming@^5.8.0", "@mui/private-theming@^5.8.4":
-  version "5.8.4"
-  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.4.tgz#8ff896601cf84eb9f8394db7674ee4dd2a3343f7"
-  integrity sha512-3Lp0VAEjtQygJ70MWEyHkKvg327O6YoBH6ZNEy6fIsrK6gmRIj+YrlvJ7LQCbowY+qDGnbdMrTBd1hfThlI8lg==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@mui/utils" "^5.8.4"
-    prop-types "^15.8.1"
-
 "@mui/private-theming@^5.8.4":
   version "5.8.4"
   resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.4.tgz#8ff896601cf84eb9f8394db7674ee4dd2a3343f7"
@@ -1654,12 +1645,12 @@
     csstype "^3.1.0"
     prop-types "^15.8.1"
 
-"@mui/types@^7.1.3", "@mui/types@^7.1.4":
+"@mui/types@^7.1.4":
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.1.4.tgz#4185c05d6df63ec673cda15feab80440abadc764"
   integrity sha512-uveM3byMbthO+6tXZ1n2zm0W3uJCQYtwt/v5zV5I77v2v18u0ITkb8xwhsDD2i3V2Kye7SaNR6FFJ6lMuY/WqQ==
 
-"@mui/utils@^5.8.0", "@mui/utils@^5.8.4":
+"@mui/utils@^5.8.4":
   version "5.8.4"
   resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.8.4.tgz#5c46b5900bd2452b3ce54a7a1c94a3e2a8a75c34"
   integrity sha512-BHYErfrjqqh76KaDAm8wZlhEip1Uj7Cmco65NcsF3BWrAl3FWngACpaPZeEbTgmaEwyWAQEE6LZhsmy43hfyqQ==
@@ -4613,10 +4604,10 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-flag-icons@^6.4.4:
-  version "6.4.4"
-  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-6.4.4.tgz#d91229842edff4ee71b3bf942b8288c19c5139fe"
-  integrity sha512-NGA8F1+MWg0Scmo/6DZcUnfEE1/8Pe/zYiyALsKF1iHVdugacdteldsLU+v6hpX0sLv42u7CNnh3oEBbaTSCoA==
+flag-icons@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-6.6.0.tgz#4fd4bb7e873369cbd9aa904887d67c9eaea63b2f"
+  integrity sha512-1ldq0+VJ73D6PHAD1x166FJh5Qwf2z3mZWojNXREkFp1uyZ4bKHlGgANOtV1f37MtHCjDMp+AMAnttpUEGWUqA==
 
 flat-cache@^3.0.4:
   version "3.0.4"
