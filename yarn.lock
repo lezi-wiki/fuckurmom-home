@@ -1599,24 +1599,6 @@
     "@mui/utils" "^5.8.4"
     prop-types "^15.8.1"
 
-"@mui/private-theming@^5.8.4":
-  version "5.8.4"
-  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.4.tgz#8ff896601cf84eb9f8394db7674ee4dd2a3343f7"
-  integrity sha512-3Lp0VAEjtQygJ70MWEyHkKvg327O6YoBH6ZNEy6fIsrK6gmRIj+YrlvJ7LQCbowY+qDGnbdMrTBd1hfThlI8lg==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@mui/utils" "^5.8.4"
-    prop-types "^15.8.1"
-
-"@mui/private-theming@^5.8.4":
-  version "5.8.4"
-  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.8.4.tgz#8ff896601cf84eb9f8394db7674ee4dd2a3343f7"
-  integrity sha512-3Lp0VAEjtQygJ70MWEyHkKvg327O6YoBH6ZNEy6fIsrK6gmRIj+YrlvJ7LQCbowY+qDGnbdMrTBd1hfThlI8lg==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@mui/utils" "^5.8.4"
-    prop-types "^15.8.1"
-
 "@mui/styled-engine@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.8.0.tgz#89ed42efe7c8749e5a60af035bc5d3a6bea362bf"
@@ -4622,10 +4604,10 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-flag-icons@^6.4.4:
-  version "6.4.4"
-  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-6.4.4.tgz#d91229842edff4ee71b3bf942b8288c19c5139fe"
-  integrity sha512-NGA8F1+MWg0Scmo/6DZcUnfEE1/8Pe/zYiyALsKF1iHVdugacdteldsLU+v6hpX0sLv42u7CNnh3oEBbaTSCoA==
+flag-icons@^6.6.3:
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-6.6.3.tgz#57259f305e98ad9e8cba71a14245882878dfc47e"
+  integrity sha512-MXkQ6TQVdjHir8fNE2YEoxyJZh7B2AZLPBr5AnJCzdOEY982Q8Lczy5MUay3OFh1ZofEhuIIPQGRADE42N1B6w==
 
 flat-cache@^3.0.4:
   version "3.0.4"
