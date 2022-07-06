@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
                         <React.Suspense>
                             <LanguageSwitcher />
                             <Link
-                                href={"https://github.com/fuckur-mom/home"}
+                                href={"https://github.com/fuckur-mom/fuckurmom-home"}
                                 target={"_blank"}
                                 rel={"noopener noreferrer"}
                                 color={"inherit"}
