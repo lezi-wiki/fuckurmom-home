@@ -122,7 +122,7 @@ const Details: React.FC = () => {
                     <Button
                         onClick={() => {
                             window.open(
-                                "https://github.com/fuckur-mom/apply/issues/new/choose"
+                                "https://github.com/fuckur-mom/fuckurmom-apply/issues/new/choose"
                             );
                             handleClose();
                         }}
