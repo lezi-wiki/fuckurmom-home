@@ -8,7 +8,7 @@ const esMX: TranslationModel = {
         "You can apply for the corresponding subdomain by submit an Issue, but you need to clarify your identity and the reason for the application.":
             "Para solicitar un subdominio, usted tiene que enviar un issue, también, su informacion personal y razón por la que necesitas también se necesita.",
         "Don't get me wrong, we have all the respect for your mother. This project gives you the freedom to create by distributing subdomains to you, which may achieve the bashing of idiots. We firmly believe that bashing idiots can change idiots or prompt idiots to self-harm and commit suicide, thereby reducing the number of idiots in the world.":
-            "Sin ofender, todos tenemos un gran respeto por tu madre. Le daremos el subdominio para garantizar que pueda crear libremente para puede golpear a los tontas emocionalmente. Creemos golpear a los tontas lo suficiente puede cambiarlos para disminuir el número de tontas en el mundo.",
+            "Sin ofender, todos tenemos un gran respeto por tu madre. Le daremos el subdominio para garantizar que pueda crear libremente para puede golpear a los gilipollezs emocionalmente. Creemos golpear a los gilipollezs lo suficiente puede cambiarlos para disminuir el número de gilipollezs en el mundo.",
         "Go for details": "Más información",
     },
     DetailContext: {
@@ -30,7 +30,7 @@ const esMX: TranslationModel = {
         "There are strict formatting requirements to follow for your application:":
             "Debes estar en el siguiente formato:",
         "You need to point out what the idiot did, write it as best you can!":
-            "apunta lo que hizo el tontas",
+            "apunta lo que hizo el gilipollezs",
         "You need to identify yourself and leave your contact details so we can better communicate with you.":
             "Identifíquese y deje sus datos de contacto",
         "If authenticated, you have unlimited access to subdomains which begin with your name, which is discouraged but considered cool.":
@@ -40,8 +40,8 @@ const esMX: TranslationModel = {
         "Your contact": "Sus datos de contacto",
         "Your project name": "Nombre de su proyecto",
         "The type of subdomain you are applying for": "El tipo de subdominio que está solicitando (NS/CNAME)",
-        "What idiots do (detailed description)": "que hizo el tonta (cuanto más detallado mejor)",
-        "Idiots' contact": "Datos de contacto del tonta",
+        "What idiots do (detailed description)": "que hizo el gilipollez (cuanto más detallado mejor)",
+        "Idiots' contact": "Datos de contacto del gilipollez",
         "Go for apply": "Enviar la solicitud",
         Confirm: "Constatar",
         "You will be navigated to the GitHub Issue page, be sure to state [Apply] at the beginning of the title of the Issue":
@@ -58,7 +58,7 @@ const esMX: TranslationModel = {
         Site: "Site: ",
         Domain: "Dominio: ",
         Owner: "Dueño: ",
-        Idiot: "Tonta: ",
+        Idiot: "gilipollez: ",
         Go: "Go: ",
     },
     languageSwitcher: {
