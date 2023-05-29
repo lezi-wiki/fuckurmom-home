@@ -9316,17 +9316,29 @@ workbox-build@6.5.3:
     workbox-sw "6.5.3"
     workbox-window "6.5.3"
 
-workbox-cacheable-response@6.5.3, workbox-cacheable-response@^6.4.2:
+workbox-cacheable-response@6.5.3:
   version "6.5.3"
   resolved "https://registry.npmmirror.com/workbox-cacheable-response/-/workbox-cacheable-response-6.5.3.tgz#b1f8c2bc599a7be8f7e3c262535629c558738e47"
   integrity sha512-6JE/Zm05hNasHzzAGKDkqqgYtZZL2H06ic2GxuRLStA4S/rHUfm2mnLFFXuHAaGR1XuuYyVCEey1M6H3PdZ7SQ==
   dependencies:
     workbox-core "6.5.3"
 
-workbox-core@6.5.3, workbox-core@^6.4.2:
+workbox-cacheable-response@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/workbox-cacheable-response/-/workbox-cacheable-response-6.6.0.tgz#f6e453c1da1491392ba30e1070a10ce4e853950b"
+  integrity sha512-JfhJUSQDwsF1Xv3EV1vWzSsCOZn4mQ38bWEBR3LdvOxSPgB65gAM6cS2CX8rkkKHRgiLrN7Wxoyu+TuH67kHrw==
+  dependencies:
+    workbox-core "6.6.0"
+
+workbox-core@6.5.3:
   version "6.5.3"
   resolved "https://registry.npmmirror.com/workbox-core/-/workbox-core-6.5.3.tgz#bca038a9ef0d7a634a6db2a60f45313ed22ac249"
   integrity sha512-Bb9ey5n/M9x+l3fBTlLpHt9ASTzgSGj6vxni7pY72ilB/Pb3XtN+cZ9yueboVhD5+9cNQrC9n/E1fSrqWsUz7Q==
+
+workbox-core@6.6.0, workbox-core@^6.4.2:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.6.0.tgz#d0f6929e338e0025d412291390e7462a5f879576"
+  integrity sha512-GDtFRF7Yg3DD859PMbPAYPeJyg5gJYXuBQAC+wyrWuuXgpfoOrIQIvFRZnQ7+czTIQjIr1DhLEGFzZanAT/3bQ==
 
 workbox-expiration@6.5.3, workbox-expiration@^6.4.2:
   version "6.5.3"
