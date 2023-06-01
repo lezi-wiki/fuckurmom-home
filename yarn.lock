@@ -9328,6 +9328,11 @@ workbox-core@6.5.3, workbox-core@^6.4.2:
   resolved "https://registry.npmmirror.com/workbox-core/-/workbox-core-6.5.3.tgz#bca038a9ef0d7a634a6db2a60f45313ed22ac249"
   integrity sha512-Bb9ey5n/M9x+l3fBTlLpHt9ASTzgSGj6vxni7pY72ilB/Pb3XtN+cZ9yueboVhD5+9cNQrC9n/E1fSrqWsUz7Q==
 
+workbox-core@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-7.0.0.tgz#dec114ec923cc2adc967dd9be1b8a0bed50a3545"
+  integrity sha512-81JkAAZtfVP8darBpfRTovHg8DGAVrKFgHpOArZbdFd78VqHr5Iw65f2guwjE2NlCFbPFDoez3D3/6ZvhI/rwQ==
+
 workbox-expiration@6.5.3, workbox-expiration@^6.4.2:
   version "6.5.3"
   resolved "https://registry.npmmirror.com/workbox-expiration/-/workbox-expiration-6.5.3.tgz#efc0811f371a2ede1052b9de1c4f072b71d50503"
@@ -9346,12 +9351,19 @@ workbox-google-analytics@6.5.3, workbox-google-analytics@^6.4.2:
     workbox-routing "6.5.3"
     workbox-strategies "6.5.3"
 
-workbox-navigation-preload@6.5.3, workbox-navigation-preload@^6.4.2:
+workbox-navigation-preload@6.5.3:
   version "6.5.3"
   resolved "https://registry.npmmirror.com/workbox-navigation-preload/-/workbox-navigation-preload-6.5.3.tgz#81b74f598b11aa07e2cf1c21af7a826a4f0f70b3"
   integrity sha512-bK1gDFTc5iu6lH3UQ07QVo+0ovErhRNGvJJO/1ngknT0UQ702nmOUhoN9qE5mhuQSrnK+cqu7O7xeaJ+Rd9Tmg==
   dependencies:
     workbox-core "6.5.3"
+
+workbox-navigation-preload@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/workbox-navigation-preload/-/workbox-navigation-preload-7.0.0.tgz#4913878dbbd97057181d57baa18d2bbdde085c6c"
+  integrity sha512-juWCSrxo/fiMz3RsvDspeSLGmbgC0U9tKqcUPZBCf35s64wlaLXyn2KdHHXVQrb2cqF7I0Hc9siQalainmnXJA==
+  dependencies:
+    workbox-core "7.0.0"
 
 workbox-precaching@6.5.3, workbox-precaching@^6.4.2:
   version "6.5.3"
